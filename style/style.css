@@ -65,4 +65,26 @@ html {
 .method img {
     width: 40px;
 }
+.method.active {
+    color: black;
+}
+
+.method:hover {
+    background-color: rgba(0, 0, 0, 0.081);
+}
+
+.method.active .checkmark {
+    color: #1f8f6b;
+}
+
+.method span {
+    flex-grow: 1;
+    text-align: left;
+    margin-left: 10px;
+}
+
+.method:last-child {
+    border-bottom: none;
+}
+
 
