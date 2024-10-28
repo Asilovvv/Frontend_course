@@ -1,12 +1,41 @@
-<!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Payment Method</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css" />
 </head>
+
 <body>
-    
+  <div class="background">
+    <div class="payment-container">
+      <div class="dots">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <h2 class="title">Payment Method</h2>
+      <div class="payment-methods">
+        <div class="method">
+          <img src="./img/visa.svg" alt="Visa">
+          <span>VISA</span>
+        </div>
+        <div class="method active">
+          <img src="./img/mastercard.svg" alt="MasterCard">
+          <span>MASTERCARD</span>
+          <span class="checkmark">✔</span>
+        </div>
+        <div class="method">
+          <img src="./img/maestro.svg" alt="Maestro">
+          <span>MAESTRO</span>
+        </div>
+      </div>
+      <button class="next-btn">Next Step →</button>
+    </div>
+  </div>
 </body>
+
 </html>
