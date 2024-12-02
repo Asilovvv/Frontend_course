@@ -5,7 +5,6 @@ const App = () => {
   const [searchTerm, setSearchTerm] = useState("");
 
   useEffect(() => {
-    
     const fetchData = async () => {
       const sampleData = [
         { id: 1, name: "Ferrari" },
@@ -26,23 +25,23 @@ const App = () => {
 
   return (
     <div>
-    <h1>Data Filtering</h1>
-    <input
-      type="text"
-      placeholder="Enter text to search..."
-      value={searchTerm}
-      onChange={(e) => setSearchTerm(e.target.value)}
-    />
-    <ul>
-      {data
-        .filter((item) =>
-          item.name.toLowerCase().includes(searchTerm.toLowerCase())
-        )
-        .map((item) => (
-          <li key={item.id}>{item.name}</li>
-        ))}
-    </ul>
-  </div>
+      <h1>Data Filtering</h1>
+      <input
+        type="text"
+        placeholder="Enter text to search..."
+        value={searchTerm}
+        onChange={(e) => setSearchTerm(e.target.value)}
+      />
+      <ul>
+        {data
+          .filter((item) =>
+            item.name.toLowerCase().includes(searchTerm.toLowerCase())
+          )
+          .map((item) => (
+            <li key={item.id}>{item.name}</li>
+          ))}
+      </ul>
+    </div>
   );
 };
 
