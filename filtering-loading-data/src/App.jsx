@@ -26,8 +26,14 @@ const App = () => {
 
   return (
     <div>
-      <h1>Data Filtering</h1>
-    </div>
+    <h1>Data Filtering</h1>
+    <input
+      type="text"
+      placeholder="Enter text to search..."
+      value={searchTerm}
+      onChange={(e) => setSearchTerm(e.target.value)}
+    />
+  </div>
   );
 };
 
