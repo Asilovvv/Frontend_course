@@ -33,6 +33,15 @@ const App = () => {
       value={searchTerm}
       onChange={(e) => setSearchTerm(e.target.value)}
     />
+    <ul>
+      {data
+        .filter((item) =>
+          item.name.toLowerCase().includes(searchTerm.toLowerCase())
+        )
+        .map((item) => (
+          <li key={item.id}>{item.name}</li>
+        ))}
+    </ul>
   </div>
   );
 };
